@@ -6,9 +6,9 @@ const LivestreamAudioControls = ({ audio }: AudioSourceControlsProps) => {
     const { streamUrl } = useControls({
         Audio: folder({
             streamUrl: {
-                value: "http://igor.torontocast.com:1950/stream",
+                value: "https://stream-relay-geo.ntslive.net/stream/64.aac?client=NTSWebApp&t=1691770293785",
                 options: {
-                    Default: "http://igor.torontocast.com:1950/stream",
+                    Default: "https://stream-relay-geo.ntslive.net/stream/64.aac?client=NTSWebApp&t=1691770293785",
                     //Ice: "https://icecast2.ufpel.edu.br/live" // DEAD
                     Estilo:
                         "https://us4.internet-radio.com/proxy/radioestiloleblon?mp=/stream",

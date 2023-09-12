@@ -1,6 +1,16 @@
 import '@/styles/globals.css'
+import React from "react";
+import {Leva} from "leva";
+
 import type { AppProps } from 'next/app'
 
 export default function App({ Component, pageProps }: AppProps) {
-  return <Component {...pageProps} />
+
+
+  return (
+      <>
+      <Leva collapsed={true}/>
+      <Component {...pageProps} />
+      </>
+  )
 }

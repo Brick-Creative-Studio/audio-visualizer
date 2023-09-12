@@ -4,7 +4,7 @@ import {
     useVisualSourceDataX,
     useVisualSourceDataY,
 } from "@/appStore";
-import ScopeAnalyzer from "@/analyzers/utils/scope";
+import ScopeAnalyzer from "@/components/analyzers/utils/scope";
 
 export interface AudioScopeAnalyzerControlsProps {
     analyzer: ScopeAnalyzer;

@@ -11,7 +11,7 @@ import {
     COORDINATE_TYPE,
     gaussianRandom,
     ICoordinateMapper,
-} from "../../mappers/coordinateMappers/common";
+} from "@/components/mappers/coordinateMappers/common";
 
 const computeNormals = (
     vertices: Vector2[],

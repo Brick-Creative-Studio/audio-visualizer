@@ -1,8 +1,8 @@
 import { folder, useControls } from "leva";
 import { useEffect, useState } from "react";
-import { audioFileInput } from "@/levaPlugins";
+import { audioFileInput } from "../../levaPlugins";
 import { AudioSourceControlsProps, iOS } from "./common";
-import "./overlay.css";
+import "./overlay.module.css";
 
 const useAudioFile = (audio: HTMLAudioElement) => {
     const [isPlaying, setIsPlaying] = useState(false);

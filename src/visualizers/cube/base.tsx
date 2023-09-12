@@ -5,7 +5,7 @@ import {
     ICoordinateMapper,
     HALF_DIAGONAL_UNIT_SQUARE,
     COORDINATE_TYPE,
-} from "../../mappers/coordinateMappers/common";
+} from "@/components/mappers/coordinateMappers/common";
 import { ColorPalette, ColorPaletteType, COLOR_PALETTE } from "../palettes";
 
 interface BaseCubeProps {

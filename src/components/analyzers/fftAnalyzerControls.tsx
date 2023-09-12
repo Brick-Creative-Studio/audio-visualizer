@@ -5,7 +5,7 @@ import {
     useEnergyInfo,
     useVisualSourceDataX,
 } from "@/appStore";
-import FFTAnalyzer, { EnergyMeasure } from "@/analyzers/utils/fft";
+import FFTAnalyzer, { EnergyMeasure } from "@/components/analyzers/utils/fft";
 
 export interface FFTAnalyzerControlsProps {
     analyzer: FFTAnalyzer;

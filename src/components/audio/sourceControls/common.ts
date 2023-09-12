@@ -28,12 +28,12 @@ export const getAnalyzerSourceDisplayName = (source: AudioSource): string => {
 
 export const iOS = (): boolean => {
     // apple "iP..." device detection. Ex: iPad, iPod, iPhone etc.
-    if (navigator.platform.toLowerCase().startsWith("ip")) {
+    if (global.navigator?.platform.toLowerCase().startsWith("ip")) {
         return true;
     }
     // iPad on iOS 13 detection
     return (
-        navigator.userAgent?.toLowerCase().startsWith("mac") &&
+        global.navigator?.userAgent?.toLowerCase().startsWith("mac") &&
         "ontouchend" in document
     );
 };

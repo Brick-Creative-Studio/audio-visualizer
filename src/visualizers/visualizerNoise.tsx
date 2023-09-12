@@ -1,6 +1,6 @@
 import { folder, useControls } from "leva";
 import React, { Suspense } from "react";
-import { CoordinateMapper_Noise } from "../mappers/coordinateMappers/noise";
+import { CoordinateMapper_Noise } from "@/components/mappers/coordinateMappers/noise";
 import { ColorPaletteType, COLOR_PALETTE } from "./palettes";
 
 interface NoiseVisualizerProps {

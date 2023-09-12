@@ -4,7 +4,7 @@ import { BoxGeometry, InstancedMesh, Matrix4, MeshBasicMaterial } from "three";
 import {
     COORDINATE_TYPE,
     ICoordinateMapper,
-} from "../../mappers/coordinateMappers/common";
+} from "@/components/mappers/coordinateMappers/common";
 import { ColorPalette, ColorPaletteType, COLOR_PALETTE } from "../palettes";
 
 interface BaseGridProps {

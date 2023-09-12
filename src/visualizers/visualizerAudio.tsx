@@ -1,8 +1,8 @@
 import { folder, useControls } from "leva";
 import React, { Suspense } from "react";
 import { useEnergyInfo, useVisualSourceDataX } from "../appStore";
-import { CoordinateMapper_Data } from "../mappers/coordinateMappers/data";
-import { EnergyTracker } from "../mappers/valueTracker/energyTracker";
+import { CoordinateMapper_Data } from "@/components/mappers/coordinateMappers/data";
+import { EnergyTracker } from "@/components/mappers/valueTracker/energyTracker";
 import { ColorPaletteType, COLOR_PALETTE } from "./palettes";
 
 interface AudioVisualProps {

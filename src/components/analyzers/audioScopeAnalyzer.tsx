@@ -1,15 +1,15 @@
 import { useMemo } from "react";
-import ControlledAudioSource from "../audio/audioSource";
+import ControlledAudioSource from "@/components/audio/audioSource";
 import {
     AudioSource,
     AUDIO_SOURCE,
     buildAudio,
     buildAudioContext,
     useSelectAudioSource,
-} from "@/audio/sourceControls/common";
-import MicrophoneAudioControls from "../audio/sourceControls/mic";
-import { useMicrophoneLink } from "@/analyzers/utils/common";
-import ScopeAnalyzer from "@/analyzers/utils/scope";
+} from "@/components/audio/sourceControls/common";
+import MicrophoneAudioControls from "@/components/audio/sourceControls/mic";
+import { useMicrophoneLink } from "@/components/analyzers/utils/common";
+import ScopeAnalyzer from "@/components/analyzers/utils/scope";
 import AudioScopeAnalyzerControls from "./scopeAnalyzerControls";
 
 interface InternalAudioScopeAnalyzerProps {

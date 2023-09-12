@@ -1,17 +1,17 @@
 import { OrbitControls } from "@react-three/drei";
 import { Canvas } from "@react-three/fiber";
 import { folder, useControls } from "leva";
-import { ApplicationMode, APPLICATION_MODE } from "../applicationModes";
+import { ApplicationMode, APPLICATION_MODE } from "../../applicationModes";
 import {
     AVAILABLE_COLOR_PALETTES,
     ColorPalette,
     ColorPaletteType,
     COLOR_PALETTE,
-} from "../visualizers/palettes";
-import AudioVisual from "../visualizers/visualizerAudio";
-import NoiseVisual from "../visualizers/visualizerNoise";
-import ParticleNoiseVisual from "../visualizers/visualizerParticleNoise";
-import WaveformVisual from "../visualizers/visualizerWaveform";
+} from "../../visualizers/palettes";
+import AudioVisual from "../../visualizers/visualizerAudio";
+import NoiseVisual from "../../visualizers/visualizerNoise";
+import ParticleNoiseVisual from "../../visualizers/visualizerParticleNoise";
+import WaveformVisual from "../../visualizers/visualizerWaveform";
 
 const getVisualizerComponent = (
     mode: ApplicationMode,
@@ -46,8 +46,8 @@ const AVAILABLE_VISUALS = [
     // "traceParticles",
     // "particleSwarm",
 ];
-const Visual3DCanvas = ({ mode }: Visual3DCanvasProps) => {
-    const visualizerParam = new URLSearchParams(document.location.search).get(
+const  Visual3DCanvas = ({ mode }: Visual3DCanvasProps) => {
+    const visualizerParam = new URLSearchParams(global.document?.location.search).get(
         "visual"
     ) as string;
     const { visualizer } = useControls({
@@ -83,6 +83,7 @@ const Visual3DCanvas = ({ mode }: Visual3DCanvasProps) => {
                 position: [-17, -6, 6.5],
                 up: [0, 0, 1],
             }}
+            style={{ height: '100%'}}
         >
             <color attach="background" args={[backgroundColor]} />
             <ambientLight />

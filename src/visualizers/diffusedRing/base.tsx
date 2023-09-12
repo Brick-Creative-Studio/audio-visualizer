@@ -6,7 +6,7 @@ import {
     gaussianRandom,
     ICoordinateMapper,
     TWO_PI,
-} from "../../mappers/coordinateMappers/common";
+} from "@/components/mappers/coordinateMappers/common";
 
 interface BaseDiffusedRingProps {
     coordinateMapper: ICoordinateMapper;

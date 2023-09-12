@@ -5,7 +5,7 @@ import {
     COORDINATE_TYPE,
     ICoordinateMapper,
     TWO_PI,
-} from "../../mappers/coordinateMappers/common";
+} from "@/components/mappers/coordinateMappers/common";
 import { ColorPalette, ColorPaletteType, COLOR_PALETTE } from "../palettes";
 
 // const MAPPING_MODE_POLAR_2D = "polar_2d";

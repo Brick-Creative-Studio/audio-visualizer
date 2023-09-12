@@ -1,5 +1,5 @@
 import { folder, useControls } from "leva";
-import { MotionMapper_Noise } from "@/mappers/motionMappers/curlNoise";
+import { MotionMapper_Noise } from "@/components/mappers/motionMappers/curlNoise";
 import ParticleSwarmVisual from "./particleSwarm/reactive";
 
 interface CurlVisualizerProps {}
