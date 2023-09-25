@@ -109,23 +109,23 @@ const webAudioTouchUnlock = (context: AudioContext) => {
 export const buildAudioContext = () => {
     console.log("Building audioCtx...");
     const audioCtx = new window.AudioContext();
-    if (iOS()) {
-        console.log("Attempting to unlock AudioContext");
-        webAudioTouchUnlock(audioCtx).then(
-            function (unlocked) {
-                if (unlocked) {
-                    // AudioContext was unlocked from an explicit user action,
-                    // sound should work now
-                    console.log("Successfully unlocked AudioContext!");
-                } else {
-                    // There was no need for unlocking, devices other than iOS
-                    console.log("No need to unlock AudioContext.");
-                }
-            },
-            function (reason) {
-                console.error(reason);
-            }
-        );
-    }
+    // if (iOS()) {
+    //     console.log("Attempting to unlock AudioContext");
+    //     webAudioTouchUnlock(audioCtx).then(
+    //         function (unlocked) {
+    //             if (unlocked) {
+    //                 // AudioContext was unlocked from an explicit user action,
+    //                 // sound should work now
+    //                 console.log("Successfully unlocked AudioContext!");
+    //             } else {
+    //                 // There was no need for unlocking, devices other than iOS
+    //                 console.log("No need to unlock AudioContext.");
+    //             }
+    //         },
+    //         function (reason) {
+    //             console.error(reason);
+    //         }
+    //     );
+    // }
     return audioCtx;
 };
