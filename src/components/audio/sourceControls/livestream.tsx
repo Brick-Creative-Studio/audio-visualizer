@@ -38,7 +38,7 @@ const LivestreamAudioControls = ({ audio }: AudioSourceControlsProps) => {
             promise
                 .then(() => console.log(`Playing ${streamUrl}`))
                 .catch((error) => {
-                    // Auto-play was prevented
+                    // Auto play was prevented
                     console.error(`Error playing ${streamUrl}`);
                 });
         }

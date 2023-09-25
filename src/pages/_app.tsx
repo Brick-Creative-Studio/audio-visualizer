@@ -9,7 +9,7 @@ export default function App({ Component, pageProps }: AppProps) {
 
   return (
       <>
-      <Leva collapsed={true}/>
+      <Leva collapsed={false}/>
       <Component {...pageProps} />
       </>
   )

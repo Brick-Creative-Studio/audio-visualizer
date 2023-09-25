@@ -89,7 +89,6 @@ const  Visual3DCanvas = ({ mode }: Visual3DCanvasProps) => {
             <ambientLight />
             <fog attach="fog" args={[backgroundColor, 0, 100]} />
             {getVisualizerComponent(mode as ApplicationMode, visualizer, palette)}
-            {/* <Stats /> */}
             <OrbitControls makeDefault />
         </Canvas>
     );
